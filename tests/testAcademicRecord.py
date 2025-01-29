@@ -45,11 +45,11 @@ class TestAcademicRecord(unittest.TestCase):
     myRec.newCourse("acct1", 2019, 2, 3, 3)
     myRec.newCourse("golf", 2019, 1, 1, 4)
 
-    lenBefore = len(myRec.transcript)
+    lenBefore = len(myRec.studtran)
 
     myRec.newCourse("golf2", 2019, 1, 1, 4)
 
-    lenAfter = len(myRec.transcript)
+    lenAfter = len(myRec.studtran)
 
     self.assertTrue(lenAfter-lenBefore==1, "Your class was unable to add a new course to the transcript.")
 
